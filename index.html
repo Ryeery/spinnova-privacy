@@ -58,12 +58,12 @@
   <article data-lang="tr" lang="tr" class="on">
     <h2>Gizlilik Politikası</h2>
     <p class="meta"><b>Geliştirici:</b> NONODE Games · <b>Uygulama:</b> SPIN NOVA (<code>com.spinnova.game</code>)<br>
-      <b>Son güncelleme:</b> 17 Kasım 2026 · <b>İletişim:</b> <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></p>
+      <b>Son güncelleme:</b> 19 Kasım 2026 · <b>İletişim:</b> <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></p>
 
     <h3>1. Özet</h3>
     <ul>
       <li>SPIN NOVA'da <b>hesap yoktur</b>. Adınızı, e-posta adresinizi, telefon numaranızı veya kişilerinizi istemeyiz.</li>
-      <li>Oyun ilerlemeniz <b>yalnızca cihazınızda</b> saklanır; NONODE Games'e gönderilmez. NONODE Games'in oyun verisi topladığı bir sunucu yoktur.</li>
+      <li>Oyun ilerlemeniz <b>cihazınızda</b> saklanır; NONODE Games'e gönderilmez. Satın alma doğrulaması etkinleştirildiğinde işlem kayıtları Bölüm 5'te açıklandığı şekilde sunucuda tutulur.</li>
       <li>Oyunda <b>reklam</b> (Google AdMob) vardır: isteğe bağlı ödüllü reklamlar ve her 10 roundda bir boss sonrası geçiş reklamı. Reklam gösterimi için Google bazı verileri kendi politikalarına göre işler (Bölüm 4).</li>
       <li>Gerçek parayla satın alma <b>şu anda etkin değildir</b>.</li>
       <li>SPIN NOVA <b>13 yaş ve üzeri</b> kullanıcılar için tasarlanmıştır.</li>
@@ -85,11 +85,13 @@
       Google Gizlilik Politikası: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
 
     <h3>5. Satın almalar</h3>
-    <p>Uygulamada Google Play Faturalandırma altyapısı bulunur ancak <b>şu anda etkin değildir</b>; coin satın alma düğmeleri pasiftir ve hiçbir ödeme alınmaz. Oyundaki coin'ler oyun içinde kazanılır. Gerçek parayla satış açılırsa ödemeler Google Play üzerinden yapılacak ve bu politika, işlenen satın alma verileri belirtilerek önceden güncellenecektir.</p>
+    <p>Uygulamada Google Play Faturalandırma altyapısı bulunur ancak <b>şu anda etkin değildir</b>; satın alma düğmeleri pasiftir ve oyun üzerinden ödeme alınmaz. Satışlar açıldığında ödemeler Google Play üzerinden gerçekleştirilir; NONODE Games ödeme kartı numarası veya kart güvenlik kodu almaz.</p>
+     <p><b>Satın alma doğrulaması etkinleştirildiğinde:</b> Google Play üzerinden alınan ürün kimliği, satın alma belirteci (purchase token), sipariş kimliği, oyun tarafından oluşturulan takma adlı hesap/cihaz tanımlayıcısı ve Google Play'den doğrulanan satın alma durumu işlenir. Cloudflare Workers üzerinden Google Play Developer API ile doğrulama yapılır. Cloudflare D1 veritabanında ürün/işlem kimlikleri, verilen coin ve güç içeriği, teslim ve iade/iptal durumu, doğrulama sayısı ve işlem zamanları tutulur. Bu veriler sahte veya tekrar kullanılan satın almaları önlemek, hakları teslim etmek, iadeleri kontrol etmek ve satın alma desteği sağlamak için kullanılır.</p>
+     <p>Sunucuya yapılan HTTPS istekleri sırasında Cloudflare, ağ hizmetinin sağlanması ve güvenliği için IP adresi ve teknik bağlantı bilgilerini kendi politikalarına göre işleyebilir. İşlem kayıtları satın alma uyuşmazlıklarının ve iadelerin yönetimi ile geçerli yasal yükümlülükler için gerekli olduğu sürece tutulabilir. İşlem kayıtlarıyla ilgili erişim veya silme talepleri için <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a> adresinden bize ulaşabilirsiniz; yasal olarak tutulması gereken kayıtlar hemen silinemeyebilir. Google'ın ödeme verilerini işlemesi hakkında: <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a>; Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Gizlilik Politikası</a>.</p>
 
     <h3>6. Uygulama izinleri</h3>
     <ul>
-      <li><b>İnternet, ağ durumu:</b> ödüllü reklamların yüklenmesi.</li>
+      <li><b>İnternet, ağ durumu:</b> reklamların yüklenmesi ve etkinleştirildiğinde satın alma doğrulaması.</li>
       <li><b>Titreşim:</b> oyun içi dokunsal geri bildirim (ayarlardan kapatılabilir).</li>
       <li><b>Reklam kimliği ve Android reklam hizmetleri</b> (<code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>), <code>WAKE_LOCK</code>, ön plan hizmeti: Google Mobile Ads SDK tarafından eklenir.</li>
       <li><b>Google Play Faturalandırma</b> (<code>BILLING</code>): satın alma altyapısı; şu anda kullanılmıyor.</li>
@@ -97,11 +99,11 @@
     <p>Uygulama konum, kamera, mikrofon, kişiler, fotoğraflar veya dosyalarınıza erişim izni <b>istemez</b>.</p>
 
     <h3>7. Yaş sınırı, gençler ve çocuklar</h3>
-    <p>SPIN NOVA <b>13 yaş ve üzeri</b> kullanıcılar için tasarlanmıştır; 13 yaşın altındaki çocuklara yönelik değildir. NONODE Games, 13 yaşından küçük çocuklardan bilerek kişisel veri toplamaz ve oyunun kendisi kimseden kişisel veri toplamaz. 13 yaşından küçük bir çocuğun uygulamayı kullandığını düşünüyorsanız <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a> adresine yazın.</p>
+    <p>SPIN NOVA <b>13 yaş ve üzeri</b> kullanıcılar için tasarlanmıştır; 13 yaşın altındaki çocuklara yönelik değildir. NONODE Games, 13 yaşından küçük çocuklardan bilerek kişisel veri toplamaz. Satın almalar etkinleştirilirse Bölüm 5'te belirtilen takma adlı işlem kayıtları işlenir. 13 yaşından küçük bir çocuğun uygulamayı kullandığını düşünüyorsanız <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a> adresine yazın.</p>
     <p><b>13–17 yaş arası kullanıcılar:</b> Oyunda yaş sorulmaz; bu nedenle tüm kullanıcılara gençlere uygun, en korumacı reklam ayarları uygulanır: kişiselleştirilmiş reklam istenmez, reklam isteklerinde "rıza yaşının altında" etiketi kullanılır ve reklam içeriği en fazla T derecesindedir. Bazı ülkelerde (ör. AB'nin bazı üye devletleri) dijital rıza yaşı 16'ya kadar çıkabilir; bu ayarlar bu kullanıcıları da kapsar.</p>
 
     <h3>8. Veri silme</h3>
-    <p>NONODE Games'te sizinle ilişkilendirilmiş bir hesap veya sunucuda tutulan bir oyun verisi yoktur. Cihazınızdaki oyun verilerini uygulamayı kaldırarak veya Android ayarları → Uygulamalar → SPIN NOVA → Depolama → Verileri temizle yoluyla silebilirsiniz. Google'ın reklam amacıyla işlediği veriler için Google'ın araçlarını kullanabilirsiniz (reklam kimliğini sıfırlama, <a href="https://myaccount.google.com" rel="noopener">myaccount.google.com</a>).</p>
+    <p>SPIN NOVA için kullanıcı hesabı açmanız gerekmez. Cihazınızdaki oyun verilerini uygulamayı kaldırarak veya Android ayarları → Uygulamalar → SPIN NOVA → Depolama → Verileri temizle yoluyla silebilirsiniz. Satın almalar etkinleştirildiyse sunucudaki satın alma kayıtları yalnızca cihaz verilerini silerek kaldırılmaz; erişim veya silme taleplerinizi <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a> adresine iletebilirsiniz (Bölüm 5). Google'ın reklam amacıyla işlediği veriler için Google'ın araçlarını kullanabilirsiniz (reklam kimliğini sıfırlama, <a href="https://myaccount.google.com" rel="noopener">myaccount.google.com</a>).</p>
 
     <h3>9. Değişiklikler</h3>
     <p>Bu politika güncellenebilir. Güncel sürüm her zaman bu adreste yayınlanır; "Son güncelleme" tarihi değişikliği gösterir.</p>
@@ -114,12 +116,12 @@
   <article data-lang="en" lang="en">
     <h2>Privacy Policy</h2>
     <p class="meta"><b>Developer:</b> NONODE Games · <b>App:</b> SPIN NOVA (<code>com.spinnova.game</code>)<br>
-      <b>Last updated:</b> November 17, 2026 · <b>Contact:</b> <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></p>
+      <b>Last updated:</b> November 19, 2026 · <b>Contact:</b> <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></p>
 
     <h3>1. Summary</h3>
     <ul>
       <li>SPIN NOVA has <b>no accounts</b>. We do not ask for your name, email address, phone number or contacts.</li>
-      <li>Your game progress is stored <b>only on your device</b> and is not sent to NONODE Games. NONODE Games does not run a server that collects game data.</li>
+      <li>Your game progress is stored <b>on your device</b> and is not sent to NONODE Games. When purchase verification is enabled, transaction records are stored on a server as described in Section 5.</li>
       <li>The game shows <b>ads</b> (Google AdMob): optional rewarded ads and an interstitial ad after the boss every 10 rounds. To serve ads, Google processes certain data under its own policies (Section 4).</li>
       <li>Real-money purchases are <b>not currently enabled</b>.</li>
       <li>SPIN NOVA is designed for users <b>aged 13 and over</b>.</li>
@@ -141,11 +143,13 @@
       Google Privacy Policy: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
 
     <h3>5. Purchases</h3>
-    <p>The app contains Google Play Billing infrastructure, but it is <b>not currently enabled</b>; coin purchase buttons are inactive and no payments are taken. Coins are earned in-game. If real-money sales are enabled, payments will be handled by Google Play and this policy will be updated beforehand to describe the purchase data processed.</p>
+    <p>The app contains Google Play Billing infrastructure, but it is <b>not currently enabled</b>; purchase buttons are inactive and no payments are taken through the game. If enabled, payments are processed by Google Play. NONODE Games does not receive payment card numbers or card security codes.</p>
+     <p><b>When purchase verification is enabled:</b> we process the Google Play product ID, purchase token, order ID, a pseudonymous account/device identifier generated by the game, and purchase status verified with Google Play. Cloudflare Workers validates purchases through the Google Play Developer API. A Cloudflare D1 database stores product and transaction identifiers, coin/power entitlements, delivery and refund/void status, verification counts, and transaction timestamps. These records are used to prevent fraudulent or duplicate purchases, deliver entitlements, manage refunds, and handle purchase support.</p>
+     <p>For HTTPS requests to this service, Cloudflare may process IP addresses and technical connection data under its own policies for network operation and security. Transaction records may be retained as needed for purchase disputes, refund handling, and applicable legal obligations. To request access to or deletion of transaction records, contact <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a>; records that must be retained by law may not be immediately deleted. Learn more: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Privacy Policy</a>.</p>
 
     <h3>6. App permissions</h3>
     <ul>
-      <li><b>Internet, network state:</b> loading rewarded ads.</li>
+      <li><b>Internet, network state:</b> loading ads and, when enabled, verifying purchases.</li>
       <li><b>Vibration:</b> in-game haptic feedback (can be turned off in settings).</li>
       <li><b>Advertising ID and Android ad services</b> (<code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>), <code>WAKE_LOCK</code>, foreground service: added by the Google Mobile Ads SDK.</li>
       <li><b>Google Play Billing</b> (<code>BILLING</code>): purchase infrastructure; not currently used.</li>
@@ -153,11 +157,11 @@
     <p>The app does <b>not</b> request access to location, camera, microphone, contacts, photos or your files.</p>
 
     <h3>7. Age requirement, teens and children</h3>
-    <p>SPIN NOVA is designed for users <b>aged 13 and over</b> and is not directed at children under 13. NONODE Games does not knowingly collect personal data from children under 13, and the game itself does not collect personal data from anyone. If you believe a child under 13 is using the app, please contact <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a>.</p>
+    <p>SPIN NOVA is designed for users <b>aged 13 and over</b> and is not directed at children under 13. NONODE Games does not knowingly collect personal data from children under 13. When purchases are enabled, pseudonymous transaction data is processed as described in Section 5. If you believe a child under 13 is using the app, please contact <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a>.</p>
     <p><b>Users aged 13–17:</b> The game does not ask for your age, so the most protective, teen-appropriate ad settings apply to everyone: personalized ads are never requested, ad requests are tagged as "under the age of consent", and ad content is limited to a maximum rating of T. In some countries (e.g. certain EU member states) the age of digital consent can be up to 16; these settings cover those users as well.</p>
 
     <h3>8. Data deletion</h3>
-    <p>NONODE Games holds no account or server-side game data linked to you. You can delete the game data on your device by uninstalling the app or via Android Settings → Apps → SPIN NOVA → Storage → Clear data. For data Google processes for advertising, use Google's tools (reset your advertising ID, <a href="https://myaccount.google.com" rel="noopener">myaccount.google.com</a>).</p>
+    <p>SPIN NOVA does not require you to create an account. You can delete on-device game data by uninstalling the app or via Android Settings → Apps → SPIN NOVA → Storage → Clear data. If purchases are enabled, deleting local game data does not delete server-side purchase records; contact <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a> to request access or deletion (Section 5). For Google's advertising data, use Google's controls (reset your advertising ID, <a href="https://myaccount.google.com" rel="noopener">myaccount.google.com</a>).</p>
 
     <h3>9. Changes</h3>
     <p>This policy may be updated. The current version is always published at this address; the "Last updated" date shows when it changed.</p>
