@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPIN NOVA — Neon arena arcade · NONODE Games</title>
+<meta name="description" content="SPIN NOVA by NONODE Games — neon arena arcade for Android. English, Deutsch, Français, Türkçe, Español, Português (Brasil).">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<style>
+  :root { --bg: #07061a; --panel: #110f33; --line: rgba(120, 150, 255, 0.22); --text: #e7e9ff; --muted: #a9acd6;
+          --blue: #3fb8ff; --violet: #b066ff; --link: #8fd3ff; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+         background-image: radial-gradient(ellipse 80% 40% at 15% 0%, rgba(63,184,255,.16), transparent 70%),
+                           radial-gradient(ellipse 70% 40% at 90% 10%, rgba(176,102,255,.18), transparent 70%); background-attachment: fixed; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 28px 16px 56px; }
+  header { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  header img { width: 64px; height: auto; border-radius: 14px; box-shadow: 0 0 18px rgba(80,170,255,.45); }
+  .brand h1 { margin: 0; font-size: 30px; line-height: 1.1; letter-spacing: 2px; font-weight: 800;
+              background: linear-gradient(90deg, #bff0ff, var(--blue) 40%, var(--violet)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .brand p { margin: 4px 0 0; color: var(--muted); font-size: 14px; letter-spacing: .5px; }
+  .langs { margin-left: auto; display: flex; gap: 6px; }
+  .langs button { font-weight: 700; font-size: 13px; line-height: 1; font-family: inherit; letter-spacing: 1px; color: var(--text); background: transparent;
+                  border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; cursor: pointer; }
+  .langs button[aria-pressed="true"] { background: linear-gradient(90deg, rgba(63,184,255,.25), rgba(176,102,255,.25)); border-color: var(--blue); }
+  .bar { height: 3px; margin: 20px 0 8px; border-radius: 2px; background: linear-gradient(90deg, transparent, var(--blue) 20%, #fff 50%, var(--violet) 80%, transparent); opacity: .7; }
+  article { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 8px 20px 20px; margin-top: 18px; }
+  h2 { font-size: 22px; margin: 18px 0 4px; }
+  h3 { font-size: 17px; margin: 24px 0 6px; color: #cfe2ff; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 6px; }
+  .meta b { color: var(--text); font-weight: 600; }
+  p, li { color: var(--text); }
+  ul { padding-left: 20px; margin: 6px 0; }
+  li { margin: 4px 0; }
+  a { color: var(--link); word-break: break-word; }
+  code { font-size: 13px; background: rgba(255,255,255,.07); padding: 1px 5px; border-radius: 5px; }
+  .note { border-left: 3px solid var(--blue); padding: 6px 12px; background: rgba(63,184,255,.07); border-radius: 0 8px 8px 0; }
+  footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+  .js [data-lang]:not(.on) { display: none; }
+  /* G36: 6 dil seçici — kesin sıra EN, DE, FR, TR, ES, PT-BR; dar ekranda 3×2 ızgara, taşma yok */
+  .langs { margin-left: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; max-width: 100%; }
+  .langs button { padding: 8px 11px; font-size: 12px; letter-spacing: .5px; white-space: nowrap; }
+  @media (max-width: 560px) { .brand h1 { font-size: 24px; } .langs { margin-left: 0; width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); } .langs button { padding: 9px 4px; font-size: 11.5px; overflow: hidden; text-overflow: ellipsis; } article { padding: 4px 14px 16px; } }
+  .cta { display: inline-block; margin: 10px 8px 4px 0; padding: 12px 18px; border-radius: 12px; font-weight: 800; text-decoration: none; color: #fff;
+         background: linear-gradient(90deg, rgba(63,184,255,.35), rgba(176,102,255,.35)); border: 1px solid var(--blue); }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 14px 0 0; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="../icon-192.png" alt="SPIN NOVA" width="64" height="64">
+    <div class="brand"><h1>SPIN NOVA</h1><p>NONODE Games</p></div>
+    <nav class="langs" aria-label="Language">
+      <button type="button" data-set="en" lang="en">ENGLISH</button>
+      <button type="button" data-set="de" lang="de">DEUTSCH</button>
+      <button type="button" data-set="fr" lang="fr">FRANÇAIS</button>
+      <button type="button" data-set="tr" lang="tr">TÜRKÇE</button>
+      <button type="button" data-set="es" lang="es">ESPAÑOL</button>
+      <button type="button" data-set="pt-BR" lang="pt-BR" title="Português (Brasil)">PORTUGUÊS</button>
+    </nav>
+  </header>
+  <div class="bar"></div>
+
+  <article data-lang="en" lang="en">
+    <h2>Break the spinning ring, bounce your shots and blast aliens and giant bosses!</h2>
+    <ul>
+      <li>Drag your ship and tap to fire: shots fly through the gaps of the spinning ring of blocks, bounce and hit the creatures inside.</li>
+      <li>A boss every 10 rounds — clear it and the two creatures it releases.</li>
+      <li>5 special powers: Bomb, Electric, Pierce, Homing and the rare Big Bang; plus OVERDRIVE and ORBIT LOCK.</li>
+      <li>Earn coins by playing and from daily and weekly quests; unlock 12 ships, balls, trails and explosion effects.</li>
+      <li>Plays offline with automatic saving. Available in English, German, French, Turkish, Spanish and Portuguese (Brazil).</li>
+    </ul>
+    <p>Free to play. Contains ads (optional rewarded ads and an interstitial after the boss every 10 rounds) and optional in-app purchases. Designed for players aged 13 and over.</p>
+    <p><a class="cta" href="https://play.google.com/store/apps/details?id=com.spinnova.game">Get it on Google Play</a><a class="cta" href="https://play.google.com/apps/testing/com.spinnova.game">Join the test</a></p>
+    <p class="note">SPIN NOVA is currently in closed testing on Google Play.</p>
+    <p class="links"><a href="../home/?lang=en">Home</a><a href="../?lang=en">Privacy Policy</a><a href="../terms/?lang=en">Terms of Service</a><span>NONODE Games · <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></span></p>
+  </article>
+
+  <article data-lang="de" lang="de">
+    <h2>Durchbrich den rotierenden Ring und besiege Aliens und riesige Bosse!</h2>
+    <ul>
+      <li>Ziehe dein Schiff und tippe zum Schießen: Die Schüsse fliegen durch die Lücken des rotierenden Blockrings, prallen ab und treffen die Kreaturen.</li>
+      <li>Alle 10 Runden ein Boss — besiege ihn und die zwei Kreaturen, die er freisetzt.</li>
+      <li>5 Spezialkräfte: Bombe, Elektro, Durchschlag, Zielsucher und der seltene Big Bang; dazu OVERDRIVE und ORBIT LOCK.</li>
+      <li>Verdiene Münzen im Spiel und mit täglichen und wöchentlichen Aufgaben; schalte 12 Schiffe, Bälle, Spuren und Explosionseffekte frei.</li>
+      <li>Offline spielbar mit automatischem Speichern. Auf Englisch, Deutsch, Französisch, Türkisch, Spanisch und Portugiesisch (Brasilien).</li>
+    </ul>
+    <p>Kostenlos spielbar. Enthält Werbung (optionale Werbung mit Belohnung und eine Zwischenwerbung nach dem Boss alle 10 Runden) und optionale In-App-Käufe. Für Spieler ab 13 Jahren.</p>
+    <p><a class="cta" href="https://play.google.com/store/apps/details?id=com.spinnova.game">Bei Google Play holen</a><a class="cta" href="https://play.google.com/apps/testing/com.spinnova.game">Am Test teilnehmen</a></p>
+    <p class="note">SPIN NOVA befindet sich derzeit im geschlossenen Test bei Google Play.</p>
+    <p class="links"><a href="../home/?lang=de">Startseite</a><a href="../?lang=de">Datenschutzerklärung</a><a href="../terms/?lang=de">Nutzungsbedingungen</a><span>NONODE Games · <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></span></p>
+  </article>
+
+  <article data-lang="fr" lang="fr">
+    <h2>Brise l’anneau tournant, fais rebondir tes tirs et explose aliens et boss !</h2>
+    <ul>
+      <li>Déplace ton vaisseau et touche pour tirer : les tirs passent par les ouvertures de l’anneau de blocs en rotation, rebondissent et touchent les créatures.</li>
+      <li>Un boss toutes les 10 manches — élimine-le ainsi que les deux créatures qu’il libère.</li>
+      <li>5 pouvoirs spéciaux : Bombe, Électrique, Perforant, Chercheur et le rare Big Bang ; plus OVERDRIVE et ORBIT LOCK.</li>
+      <li>Gagne des pièces en jouant et grâce aux quêtes quotidiennes et hebdomadaires ; débloque 12 vaisseaux, balles, traînées et effets d’explosion.</li>
+      <li>Jouable hors ligne avec sauvegarde automatique. Disponible en anglais, allemand, français, turc, espagnol et portugais (Brésil).</li>
+    </ul>
+    <p>Gratuit. Contient des publicités (publicités récompensées facultatives et une publicité interstitielle après le boss toutes les 10 manches) et des achats intégrés facultatifs. Conçu pour les joueurs de 13 ans et plus.</p>
+    <p><a class="cta" href="https://play.google.com/store/apps/details?id=com.spinnova.game">Disponible sur Google Play</a><a class="cta" href="https://play.google.com/apps/testing/com.spinnova.game">Rejoindre le test</a></p>
+    <p class="note">SPIN NOVA est actuellement en test fermé sur Google Play.</p>
+    <p class="links"><a href="../home/?lang=fr">Accueil</a><a href="../?lang=fr">Politique de confidentialité</a><a href="../terms/?lang=fr">Conditions d’utilisation</a><span>NONODE Games · <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></span></p>
+  </article>
+
+  <article data-lang="tr" lang="tr">
+    <h2>Dönen çemberi aş, toplarını sektir, uzaylıları ve dev bossları patlat!</h2>
+    <ul>
+      <li>Gemini sürükle, dokunarak ateş et: toplar dönen blok çemberinin boşluklarından girer, seker ve içerideki yaratıkları vurur.</li>
+      <li>Her 10 roundda bir boss — onu ve ondan çıkan iki yaratığı temizle.</li>
+      <li>5 özel güç: Bomba, Elektrik, Delici, Güdümlü ve nadir BIG BANG; ayrıca OVERDRIVE ve ORBIT LOCK.</li>
+      <li>Oynayarak ve günlük/haftalık görevlerle coin kazan; 12 gemi, top, iz ve patlama efektinin kilidini aç.</li>
+      <li>İnternetsiz oynanır, otomatik kaydeder. Türkçe, İngilizce, Almanca, Fransızca, İspanyolca ve Portekizce (Brezilya).</li>
+    </ul>
+    <p>Ücretsiz oynanır. Reklam içerir (isteğe bağlı ödüllü reklamlar ve her 10 roundda bir boss sonrası geçiş reklamı) ve isteğe bağlı uygulama içi satın almalar sunar. 13 yaş ve üzeri oyuncular için tasarlanmıştır.</p>
+    <p><a class="cta" href="https://play.google.com/store/apps/details?id=com.spinnova.game">Google Play'den indir</a><a class="cta" href="https://play.google.com/apps/testing/com.spinnova.game">Teste katıl</a></p>
+    <p class="note">SPIN NOVA şu anda Google Play'de kapalı testte.</p>
+    <p class="links"><a href="../home/?lang=tr">Ana sayfa</a><a href="../?lang=tr">Gizlilik Politikası</a><a href="../terms/?lang=tr">Kullanım Koşulları</a><span>NONODE Games · <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></span></p>
+  </article>
+
+  <article data-lang="es" lang="es">
+    <h2>Rompe el anillo giratorio, haz rebotar tus tiros y destruye alienígenas y jefes.</h2>
+    <ul>
+      <li>Arrastra tu nave y toca para disparar: los tiros pasan por los huecos del anillo de bloques giratorio, rebotan y golpean a las criaturas.</li>
+      <li>Un jefe cada 10 rondas: derrótalo a él y a las dos criaturas que libera.</li>
+      <li>5 poderes especiales: Bomba, Eléctrico, Perforante, Guiado y el raro Big Bang; además de OVERDRIVE y ORBIT LOCK.</li>
+      <li>Gana monedas jugando y con misiones diarias y semanales; desbloquea 12 naves, bolas, estelas y efectos de explosión.</li>
+      <li>Se juega sin conexión con guardado automático. En inglés, alemán, francés, turco, español y portugués (Brasil).</li>
+    </ul>
+    <p>Gratis. Contiene anuncios (anuncios con recompensa opcionales y un anuncio intersticial después del jefe cada 10 rondas) y compras opcionales dentro de la app. Diseñado para jugadores de 13 años o más.</p>
+    <p><a class="cta" href="https://play.google.com/store/apps/details?id=com.spinnova.game">Disponible en Google Play</a><a class="cta" href="https://play.google.com/apps/testing/com.spinnova.game">Unirse a la prueba</a></p>
+    <p class="note">SPIN NOVA está actualmente en prueba cerrada en Google Play.</p>
+    <p class="links"><a href="../home/?lang=es">Inicio</a><a href="../?lang=es">Política de privacidad</a><a href="../terms/?lang=es">Términos de servicio</a><span>NONODE Games · <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></span></p>
+  </article>
+
+  <article data-lang="pt-BR" lang="pt-BR">
+    <h2>Quebre o anel giratório, rebata seus tiros e destrua alienígenas e chefões!</h2>
+    <ul>
+      <li>Arraste sua nave e toque para atirar: os tiros passam pelas aberturas do anel de blocos giratório, ricocheteiam e acertam as criaturas.</li>
+      <li>Um chefão a cada 10 rodadas — derrote-o e as duas criaturas que ele libera.</li>
+      <li>5 poderes especiais: Bomba, Elétrico, Perfurante, Guiado e o raro Big Bang; além de OVERDRIVE e ORBIT LOCK.</li>
+      <li>Ganhe moedas jogando e com missões diárias e semanais; desbloqueie 12 naves, bolas, rastros e efeitos de explosão.</li>
+      <li>Funciona offline com salvamento automático. Em inglês, alemão, francês, turco, espanhol e português (Brasil).</li>
+    </ul>
+    <p>Gratuito. Contém anúncios (anúncios premiados opcionais e um anúncio intersticial após o chefão a cada 10 rodadas) e compras opcionais no app. Feito para jogadores a partir de 13 anos.</p>
+    <p><a class="cta" href="https://play.google.com/store/apps/details?id=com.spinnova.game">Disponível no Google Play</a><a class="cta" href="https://play.google.com/apps/testing/com.spinnova.game">Participar do teste</a></p>
+    <p class="note">O SPIN NOVA está em teste fechado no Google Play no momento.</p>
+    <p class="links"><a href="../home/?lang=pt-BR">Início</a><a href="../?lang=pt-BR">Política de Privacidade</a><a href="../terms/?lang=pt-BR">Termos de Serviço</a><span>NONODE Games · <a href="mailto:nonodegames@gmail.com">nonodegames@gmail.com</a></span></p>
+  </article>
+
+  <footer>© 2026 NONODE Games · SPIN NOVA</footer>
+</div>
+<script>
+// Dil seçimi (gizlilik sayfasıyla aynı): 1) ?lang=  2) tarayıcı dili  3) İngilizce. JavaScript kapalıysa altı dil alt alta görünür.
+(function () {
+  var L = ['en', 'de', 'fr', 'tr', 'es', 'pt-BR'];
+  var T = {"en":"SPIN NOVA — Neon arena arcade · NONODE Games","de":"SPIN NOVA — Neon-Arena-Arcade · NONODE Games","fr":"SPIN NOVA — Arcade d’arène néon · NONODE Games","tr":"SPIN NOVA — Neon arena arcade · NONODE Games","es":"SPIN NOVA — Arcade de arena neón · NONODE Games","pt-BR":"SPIN NOVA — Arcade de arena neon · NONODE Games"};
+  function norm(v) { v = String(v || '').toLowerCase(); if (v.indexOf('pt') === 0) return 'pt-BR'; for (var i = 0; i < L.length; i++) if (v === L[i] || v.indexOf(L[i] + '-') === 0) return L[i]; return null; }
+  var d = document.documentElement; d.className += ' js';
+  function set(l, push) {
+    var arts = document.querySelectorAll('article[data-lang]'), btns = document.querySelectorAll('[data-set]');
+    for (var i = 0; i < arts.length; i++) arts[i].classList.toggle('on', arts[i].getAttribute('data-lang') === l);
+    for (var j = 0; j < btns.length; j++) btns[j].setAttribute('aria-pressed', btns[j].getAttribute('data-set') === l ? 'true' : 'false');
+    d.lang = l; document.title = T[l];
+    if (push && window.history && history.replaceState) { try { history.replaceState(null, '', location.pathname + '?lang=' + l + location.hash); } catch (e) {} }
+  }
+  var m = location.search.match(/[?&]lang=([A-Za-z-]+)/), q = m && norm(m[1]), b = null;
+  if (!q) { var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language]; for (var k = 0; k < list.length && !b; k++) b = norm(list[k]); }
+  set(q || b || 'en', false);
+  var bs = document.querySelectorAll('[data-set]');
+  for (var n = 0; n < bs.length; n++) bs[n].addEventListener('click', function () { set(this.getAttribute('data-set'), true); window.scrollTo(0, 0); });
+})();
+</script>
+</body>
+</html>
